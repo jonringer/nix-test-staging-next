@@ -4,7 +4,7 @@ Nix file used to validate `staging-next` in Nixpkgs
 ## How to Use
 
 ```
-ln -s /path/to/nixpkgs ./test-staging.nix
+ln -s ./test-staging.nix /path/to/nixpkgs
 cd /path/to/nixpkgs
 nix build -f test-staging.nix --keep-going
 # evalulate build failures
