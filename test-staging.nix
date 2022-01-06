@@ -53,9 +53,8 @@ with import ./. { };
 
   # dotnet
   (with dotnetCorePackages; combinePackages [
-    sdk_2_1
-    sdk_3_0
     sdk_3_1
+    sdk_5_0
   ])
   chromium
   firefox
@@ -99,8 +98,7 @@ with import ./. { };
   nixosTests.firefox
   nixosTests.firewall
   nixosTests.fontconfig-default-fonts
-  nixosTests.gnome3-xorg
-  nixosTests.gnome3
+  nixosTests.gnome
   nixosTests.hibernate
   nixosTests.i3wm
   nixosTests.installer.btrfsSimple
@@ -119,7 +117,6 @@ with import ./. { };
   nixosTests.keymap.azerty
   nixosTests.keymap.colemak
   nixosTests.keymap.dvorak
-  nixosTests.keymap.dvp
   nixosTests.keymap.neo
   nixosTests.keymap.qwertz
   nixosTests.latestKernel.login
@@ -182,18 +179,17 @@ with import ./. { };
 
   # packages I maintain
   azure-cli
-  dwarf-theraptist
+  dwarf-therapist
   pappl
   spicetify-cli
   yamllint
   openrgb
-  python36Packages.psutil
   python37Packages.psutil
   python38Packages.psutil
   python39Packages.psutil
   python310Packages.psutil
+  python311Packages.psutil
 
-  python3Packages.pybids
   python3Packages.secure
   vimPlugins.vim-hcl
   python3Packages.sshtunnel
