@@ -4,7 +4,9 @@ Nix file used to validate `staging-next` in Nixpkgs
 ## How to Use
 
 ```
-ln -s ./test-staging.nix /path/to/nixpkgs
+# Use a hard link, or else the `import ./. {}` will evaluate to symlink dest
+ln -P $PWD/test-staging.nix /path/to/nixpkgs
+
 cd /path/to/nixpkgs
 nix build -f test-staging.nix --keep-going
 # evalulate build failures
