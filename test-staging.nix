@@ -124,7 +124,6 @@ with import ./. { };
   nixosTests.login
   nixosTests.misc
   nixosTests.mutableUsers
-  nixosTests.nano
   nixosTests.nat.firewall-conntrack
   nixosTests.nat.firewall
   nixosTests.nat.standalone
@@ -156,7 +155,7 @@ with import ./. { };
   nixosTests.nfs3.simple
   nixosTests.nfs4.simple
   nixosTests.openssh
-  nixosTests.pantheon
+  #nixosTests.pantheon
   nixosTests.php.fpm
   nixosTests.php.httpd
   nixosTests.php.pcre
@@ -184,7 +183,6 @@ with import ./. { };
   spicetify-cli
   yamllint
   openrgb
-  python37Packages.psutil
   python38Packages.psutil
   python39Packages.psutil
   python310Packages.psutil
